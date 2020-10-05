@@ -5,7 +5,6 @@ body {
 
 #header {
     width: 100%;
-    border: solid 1px red;
     display: flex;
     height: 65px;
     padding-top: 10px;
@@ -27,6 +26,7 @@ body {
     border: 0;
     padding: 0;
     background-color: rgba(0, 0, 0, 0);
+    width: 100%;
 }
 
 .searchbar input:focus {
@@ -36,9 +36,38 @@ body {
 .logo {
     height: 30px;
     width: 90px;
-    padding: 10px;
+    padding: 4px 28px 0 30px;
 }
 
-#results, #footer, .account-menu, .search-options, .microphone-icon, .search-icon {
+#results, #footer, .account-menu, .search-options {
     display: none;
+}
+
+.x-icon {
+    color: #80868b;
+    fill: #80868b;
+    width: 43px;
+    height: 24px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.horizontal-rule {
+    border-left: 1px solid rgb(223, 225, 229);
+    height: 65%;
+}
+
+.microphone-icon, .search-icon {
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 0 8px 0 8px;
 }
