@@ -17,9 +17,10 @@ body {
     border: 1px solid #dfe1e5;
     border-radius: 24px;
     width: 690px;
-    height: 43px;
+    height: 44px;
     display: flex;
-    padding-left: 14px;
+    padding-left: 20px;
+    margin-left: 15px;
 }
 
 .searchbar input {
@@ -27,6 +28,7 @@ body {
     padding: 0;
     background-color: rgba(0, 0, 0, 0);
     width: 100%;
+    font-size: 16px;
 }
 
 .searchbar input:focus {
@@ -34,9 +36,17 @@ body {
 }
 
 .logo {
-    height: 30px;
-    width: 90px;
-    padding: 4px 28px 0 30px;
+    height: 34px;
+    width: 92px;
+    padding-top: 4px;
+    padding-right: 28px;
+    padding-left: 25px;
+    top: 4px;
+}
+
+.logo img {
+    height: 31px;
+    width: 91px;
 }
 
 #results, #footer, .account-menu, .search-options {
