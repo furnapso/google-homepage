@@ -16,21 +16,26 @@ body {
 .searchbar {
     border: 1px solid #dfe1e5;
     border-radius: 24px;
-    width: 655px;
+    width: 666px;
     height: 44px;
     display: flex;
-    padding-left: 20px;
+    padding: 0 4px 0 20px;
     margin-left: 15px;
     flex-shrink: 0;
     padding-right: 4px;
+    align-items: center;
 }
 
 .searchbar input {
     border: 0;
     padding: 0;
     background-color: rgba(0, 0, 0, 0);
-    width: 100%;
+    width: 533px;
+    height: 39px;
     font-size: 16px;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .searchbar input:focus {
@@ -43,7 +48,7 @@ body {
 
 .logo {
     height: 34px;
-    width: 92px;
+    width: 97px;
     padding-top: 4px;
     padding-right: 28px;
     padding-left: 25px;
@@ -90,17 +95,14 @@ body {
     padding: 0 8px 0 8px;
 }
 
-#header {
-    border: 1px solid red;
-}
-
 .account-menu {
-    border: 1px solid red;
     display: flex;
     margin-left: auto;
     width: 132px;
     align-items: center;
     justify-content: center;
+    padding-top: 5px;
+    padding-right: 14px;
 }
 
 .apps-icon {
@@ -109,6 +111,21 @@ body {
     padding: 8px;
     vertical-align: middle;
     fill: #5f6368;
+}
+
+.apps-icon-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.apps-icon-wrapper:hover {
+    background-color: rgba(60,64,67,0.08);
+}
+
+.apps-icon:hover, .user-logo:hover {
+    cursor: pointer;
 }
 
 .user-logo {
