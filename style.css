@@ -22,6 +22,7 @@ body {
     padding-left: 20px;
     margin-left: 15px;
     flex-shrink: 0;
+    padding-right: 4px;
 }
 
 .searchbar input {
@@ -34,6 +35,10 @@ body {
 
 .searchbar input:focus {
     outline: 0;
+}
+
+.searchbar:hover {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
 }
 
 .logo {
@@ -50,7 +55,7 @@ body {
     width: 91px;
 }
 
-#results, #footer, .account-menu, .search-options {
+#results, #footer, .search-options {
     display: none;
 }
 
@@ -83,4 +88,40 @@ body {
     vertical-align: middle;
     cursor: pointer;
     padding: 0 8px 0 8px;
+}
+
+#header {
+    border: 1px solid red;
+}
+
+.account-menu {
+    border: 1px solid red;
+    display: flex;
+    margin-left: auto;
+    width: 132px;
+    align-items: center;
+    justify-content: center;
+}
+
+.apps-icon {
+    height: 24px;
+    width: 24px;
+    padding: 8px;
+    vertical-align: middle;
+    fill: #5f6368;
+}
+
+.user-logo {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+.user-logo-wrapper {
+    padding: 4px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
