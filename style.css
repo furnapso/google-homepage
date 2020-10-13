@@ -3,6 +3,21 @@ body {
     padding: 0;
 }
 
+/* WIP */
+#results, #footer {
+    display: none;
+}
+
+/* HEADER */
+
+#header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER TOP */
+
 .header-top {
     width: 100%;
     display: flex;
@@ -13,15 +28,22 @@ body {
     align-items: center;
 }
 
-#header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+/* LOGO */
+.logo {
+    height: 34px;
+    width: 92px;
+    padding-top: 4px;
+    padding-right: 28px;
+    padding-left: 25px;
+    top: 4px;
 }
 
-.header-bottom {
-    width: 100%;
+.logo img {
+    height: 31px;
+    width: 91px;
 }
+
+/* SEARCH */
 
 .searchbar {
     border: 1px solid #dfe1e5;
@@ -49,24 +71,6 @@ body {
 
 .searchbar:hover {
     box-shadow: 0 1px 6px rgba(32,33,36,.28);
-}
-
-.logo {
-    height: 34px;
-    width: 92px;
-    padding-top: 4px;
-    padding-right: 28px;
-    padding-left: 25px;
-    top: 4px;
-}
-
-.logo img {
-    height: 31px;
-    width: 91px;
-}
-
-#results, #footer {
-    display: none;
 }
 
 .x-icon {
@@ -100,6 +104,8 @@ body {
     padding: 0 8px 0 8px;
 }
 
+/* ACCOUNT MENU */
+
 .account-menu {
     display: flex;
     margin-left: auto;
@@ -131,21 +137,27 @@ body {
     justify-content: center;
 }
 
-.search-options {
-    font-family: arial, sans-serif;
+/* HEADER BOTTOM */
+
+.header-bottom {
     width: 100%;
+    border-bottom: 1px solid rgb(235, 235, 235);
     height: 58px;
-    margin-left: 169px;
-    justify-content: start;
+    display: flex;
+    align-items: center;
     position: relative;
     top: -10px;
 }
 
-.search-type {
+/* SEARCH MENU */
+
+.search-options {
+    font-family: arial, sans-serif;
+    width: 655px;
+    height: 58px;
+    margin-left: 169px;
+    justify-content: space-between;
     display: flex;
-    height: 100%;
-    width: 632px;
-    align-items: baseline;
 }
 
 .search-options a{
@@ -155,7 +167,7 @@ body {
     font-size: 13px;
     margin: 11px 1px 0px 1px;
     height: 16px;
-    width: 53px;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -172,6 +184,13 @@ body {
     line-height: 16px;
 }
 
+.search-type {
+    display: flex;
+    height: 100%;
+    width: 632px;
+    align-items: baseline;
+}
+
 .icon {
     height: 16px;
     width: 16px;
@@ -184,4 +203,15 @@ body {
 .icon svg {
     height: 16px;
     width: 16px;
+    fill: rgb(95, 99, 104);
+}
+
+.search-more-options {
+    width: auto;
+    display: flex;
+}
+
+.search-option-active {
+    border-bottom: 3px solid rgb(26, 115, 232);
+    color: rgb(26, 115, 232) !important;
 }
