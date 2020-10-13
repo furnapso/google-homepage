@@ -3,7 +3,22 @@ body {
     padding: 0;
 }
 
+/* WIP */
+#footer {
+    display: none;
+}
+
+/* HEADER */
+
 #header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER TOP */
+
+.header-top {
     width: 100%;
     display: flex;
     height: 65px;
@@ -12,6 +27,23 @@ body {
     flex-direction: row;
     align-items: center;
 }
+
+/* LOGO */
+.logo {
+    height: 34px;
+    width: 92px;
+    padding-top: 4px;
+    padding-right: 28px;
+    padding-left: 25px;
+    top: 4px;
+}
+
+.logo img {
+    height: 31px;
+    width: 91px;
+}
+
+/* SEARCH */
 
 .searchbar {
     border: 1px solid #dfe1e5;
@@ -46,24 +78,6 @@ body {
     box-shadow: 0 1px 6px rgba(32,33,36,.28);
 }
 
-.logo {
-    height: 34px;
-    width: 97px;
-    padding-top: 4px;
-    padding-right: 28px;
-    padding-left: 25px;
-    top: 4px;
-}
-
-.logo img {
-    height: 31px;
-    width: 91px;
-}
-
-#results, #footer, .search-options {
-    display: none;
-}
-
 .x-icon {
     color: #80868b;
     fill: #80868b;
@@ -94,6 +108,8 @@ body {
     cursor: pointer;
     padding: 0 8px 0 8px;
 }
+
+/* ACCOUNT MENU */
 
 .account-menu {
     display: flex;
@@ -141,4 +157,164 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* HEADER BOTTOM */
+
+.header-bottom {
+    width: 100%;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    height: 58px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -10px;
+}
+
+/* SEARCH MENU */
+
+.search-options {
+    font-family: arial, sans-serif;
+    width: 655px;
+    height: 58px;
+    margin-left: 169px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.search-options a{
+    color:rgb(95, 99, 104);
+    text-decoration: none;
+    padding: 16px 12px 12px 10px;
+    font-size: 13px;
+    margin: 11px 1px 0px 1px;
+    height: 16px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 16px;
+}
+
+.search-option {
+    display: flex !important;
+    align-items: baseline !important;
+}
+
+.search-option-text {
+    height: 16px;
+    width: auto;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.search-type {
+    display: flex;
+    height: 100%;
+    width: 632px;
+    align-items: center;
+}
+
+.icon {
+    height: 16px;
+    width: 16px;
+    margin-right: 5px;
+    vertical-align: bottom;
+    line-height: 16px;
+}
+
+.icon svg {
+    height: 16px;
+    width: 16px;
+    fill: rgb(95, 99, 104);
+    vertical-align: text-bottom;
+    line-height: 16px;
+    font-size: 13px;
+}
+
+.search-more-options {
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.search-option-active {
+    border-bottom: 3px solid rgb(26, 115, 232);
+    color: rgb(26, 115, 232) !important;
+    margin-bottom: -3px !important;
+}
+
+/* RESULTS */
+#results {
+    width: 652px;
+    margin-left: 180px;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.results-volume {
+    color:rgb(112, 117, 122);
+    height: 43px;
+}
+
+.result-breadcrumbs {
+    color:rgb(112, 117, 122);
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+.result-tld {
+    color: black;
+}
+
+.result-page {
+    margin-left: 5px;
+}
+
+.result-actions {
+    border-left: 4px solid rgba(0, 0, 0, 0);
+    border-right: 4px solid rgba(0, 0, 0, 0);
+    border-bottom: 0px solid rgb(112, 117, 122);
+    border-top: 5px solid rgb(112, 117, 122);
+    height: 0;
+    width: 0;
+    margin-left: 7px;
+}
+
+.result-title {
+    padding-top: 4px;
+    height: 26px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(26, 13, 171);
+}
+
+.result-description {
+    color: rgb(77, 81, 86);
+}
+
+.result-suggestions {
+    height: 220px;
+    width: 652px;
+    display: flex;
+    flex-direction: column;
+}
+
+.result-suggestions-title {
+    color: black;
+    font-size: 20px;
+}
+
+.result-suggestions-items {
+    display: flex;
+    flex-direction: column;
 }
