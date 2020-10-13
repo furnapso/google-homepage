@@ -175,12 +175,14 @@ body {
 }
 
 .search-option {
-    display: inline-block;
+    display: flex !important;
+    align-items: baseline !important;
 }
 
 .search-option-text {
     height: 16px;
     width: auto;
+    font-size: 13px;
     line-height: 16px;
 }
 
@@ -188,30 +190,34 @@ body {
     display: flex;
     height: 100%;
     width: 632px;
-    align-items: baseline;
+    align-items: center;
 }
 
 .icon {
     height: 16px;
     width: 16px;
     margin-right: 5px;
-    vertical-align: text-bottom;
+    vertical-align: bottom;
     line-height: 16px;
-    font-size: 13px;
 }
 
 .icon svg {
     height: 16px;
     width: 16px;
     fill: rgb(95, 99, 104);
+    vertical-align: text-bottom;
+    line-height: 16px;
+    font-size: 13px;
 }
 
 .search-more-options {
     width: auto;
     display: flex;
+    align-items: center;
 }
 
 .search-option-active {
     border-bottom: 3px solid rgb(26, 115, 232);
     color: rgb(26, 115, 232) !important;
+    margin-bottom: -3px !important;
 }
