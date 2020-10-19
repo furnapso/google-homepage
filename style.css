@@ -301,20 +301,3 @@ body {
 .result-description {
     color: rgb(77, 81, 86);
 }
-
-.result-suggestions {
-    height: 220px;
-    width: 652px;
-    display: flex;
-    flex-direction: column;
-}
-
-.result-suggestions-title {
-    color: black;
-    font-size: 20px;
-}
-
-.result-suggestions-items {
-    display: flex;
-    flex-direction: column;
-}
