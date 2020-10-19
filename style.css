@@ -301,3 +301,43 @@ body {
 .result-description {
     color: rgb(77, 81, 86);
 }
+
+/* PEOPLE ALSO ASK */
+.people-also-ask {
+    width: 652px;
+    height: 220px;
+    border: 1px solid rgb(223, 225, 229);
+    border-radius: 8px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.people-also-ask-title {
+    font-size: 20px;
+    padding: 9px 16px 9px 16px;
+}
+
+.people-also-ask-item-container {
+    font-size: 16px;
+    border-top: 1px solid rgb(229, 229, 229);
+    height: 24px;
+    padding: 10px 16px 9px 16px;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.people-also-ask-item-dropdown {
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    fill: rgb(112, 117, 122);
+}
+
+.people-also-ask-item-dropdown svg {
+    height: 24px;
+    width: 24px;
+    fill: rgb(112, 117, 122);
+    line-height: 24px;
+}
