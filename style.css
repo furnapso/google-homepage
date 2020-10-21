@@ -380,9 +380,65 @@ body {
 /* PAGINATION */
 #pageination {
     height: 56px;
+    width: 652px;
+    display: block;
+}
+
+#pageination tbody {
+    height: 56px;
     width: 310px;
+    table-layout: fixed;
+    font-size: 14px;
     margin: 30px 171px 30px 171px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: table;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+#pageination tr {
+    display: table-row;
+    border-collapse: collapse;
+    text-align: left;
+    vertical-align: top;
+}
+
+#pageination td {
+    height: 56px;
+    width: 28px;
+    border: 1px solid red;
+    display: table-cell;
+    vertical-align: top;
+    text-align: center;
+    padding: 0px;
+    border-collapse: collapse;
+}
+
+.letter {
+    display: block;
+    width: 28px;
+    height: 40px;
+}
+
+.g {
+    background-image:url(https://www.google.com/images/nav_logo299.webp);
+    background-position-x: -24px;
+    background-position-y: 0;
+    background-attachment:scroll;
+    background-clip:border-box;
+    background-origin: padding-box;
+    height: 40px;
+    width: 28px;
+    border: 1px solid red;
+    display: block;
+}
+
+.first-o {
+    display: block;
+    background-attachment:scroll;
+    background-clip:border-box;
+    background-color:rgba(0, 0, 0, 0);
+    background-image:url(https://www.google.com/images/nav_logo299.webp);
+    background-origin:padding-box;
+    background-position-x:-53px;
+    background-position-y:0px;
 }
