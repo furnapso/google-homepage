@@ -6,11 +6,6 @@ body {
     padding: 0;
 }
 
-/* WIP */
-#footer {
-    display: none;
-}
-
 /* HEADER */
 
 #header {
@@ -492,4 +487,14 @@ body {
     white-space: nowrap;
     display: block;
     text-align: left;
+}
+
+/* FOOTER */
+#footer {
+    width: 100%;
+    height: 40px;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    color: rgb(34, 34, 34);.
+    background-color:rgb(242, 242, 242);
 }
