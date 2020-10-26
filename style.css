@@ -491,10 +491,20 @@ body {
 
 /* FOOTER */
 #footer {
-    width: 100%;
+    max-width: 100%;
     height: 40px;
     font-family: arial, sans-serif;
     font-size: 14px;
-    color: rgb(34, 34, 34);.
+    color: rgb(95, 99, 104);
     background-color:rgb(242, 242, 242);
+    border-top: 1px solid rgb(228, 228, 228);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 153px;
+    margin-top: 30px;
+}
+
+.footer-link {
+    padding-left: 27px;
 }
